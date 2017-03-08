@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 # SRCDS Container Start Script
 #
 # Copyright (c) 2016 Dane Everitt <dane@daneeveritt.com>
