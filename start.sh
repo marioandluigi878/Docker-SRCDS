@@ -6,7 +6,7 @@ set -x
 # MIT Licensed
 # ##
 sleep 3
-if [ "$(pwd)" -ne "/home/container" ]; then
+if [ "$(pwd)" != "/home/container" ]; then
     cd /home/container
 fi
 
