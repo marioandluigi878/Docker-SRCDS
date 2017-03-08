@@ -27,7 +27,7 @@ if [ ! -f "/home/container/steamcmd/steamcmd.sh" ]; then
 
     echo "Installing requested game, this could take a long time depending on game size and network."
     set -x
-    ./steamcmd.sh +login anonymous +force_install_dir /home/container +app_update $SRCDS_APPID +quit
+    ./steamcmd.sh +login $SCRDS_USER +password $SCRDS_PASS +force_install_dir /home/container +app_update $SRCDS_APPID +quit
     set +x
 
     cd /home/container
